@@ -1,9 +1,10 @@
 .home-title-bar {
   display: inline-block;
+  height: 5vh;
+  background-color: black;
 }
 
 .home-logo {
-  width: 220px;
-  height: 220px;
-  float: left;
+  width: 128px;
+  height: 128px;
 }
