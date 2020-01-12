@@ -1,0 +1,9 @@
+.home-title-bar {
+  display: inline-block;
+}
+
+.home-logo {
+  width: 220px;
+  height: 220px;
+  float: left;
+}
