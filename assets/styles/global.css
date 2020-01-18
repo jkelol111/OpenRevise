@@ -1,26 +1,60 @@
-/* :root {
-  --theme-color: ;
-} */
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
-  font-family: "Open Sans Regular", serif;
-  src: url("assets/fonts/OpenSans-Regular.ttf");
+  font-family: "Open Sans ExtraBold";
+  src: url("../fonts/OpenSans-ExtraBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {
   box-sizing: border-box;
+  display: inline;
   margin: 0;
   padding: 0;
   font-family: "Open Sans Regular";
+  background-color: black;
   color: white;
   z-index: 3;
 }
 
-body {
-  background-color: black;
+.global-menubar {
+  position: fixed;
+  top: 0px;
+  width: 100%;  
+  overflow: none;
 }
 
-.logo {
-  width: 200px;
+.global-logo {
+  width: 220px;
   height: auto;
+  padding: 10px 20px;
+  float: left;
+}
+
+@media only screen and (max-width: 600px) {
+  .global-menubar .global-location {
+    display: none;
+  }
+}
+
+.global-location {
+  font-size: 38px;
+  float: left;
+  padding: 20px 5px;
+}
+
+.global-hamburger {
+  padding: 22px 20px;
+  float: right;
+}
+
+.global-content {
+  position: absolute;
+  top: 100px;
 }
