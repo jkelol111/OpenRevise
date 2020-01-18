@@ -1,39 +1,36 @@
 @font-face {
-  font-family: "Open Sans Regular";
-  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+  font-family: "Fira Sans Regular";
+  src: url("../fonts/FiraSans-Regular.otf");
 }
 
 @font-face {
-  font-family: "Open Sans ExtraBold";
-  src: url("../fonts/OpenSans-ExtraBold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+  font-family: "Fira Sans Heavy";
+  src: url("../fonts/FiraSans-Heavy.otf");
+}
+
+@font-face {
+  font-family: "Fira Sans HeavyItalic";
+  src: url("../fonts/FiraSans-HeavyItalic.otf");
 }
 
 * {
   box-sizing: border-box;
-  display: inline;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans Regular";
-  background-color: black;
-  color: white;
-  z-index: 3;
+  font-family: "Fira Sans Regular";
 }
 
 .global-menubar {
   position: fixed;
   top: 0px;
-  width: 100%;  
-  overflow: none;
+  width: 100%;
+  background: transparent;
 }
 
 .global-logo {
   width: 220px;
   height: auto;
-  padding: 10px 20px;
+  padding: 10px 10px;
   float: left;
 }
 
@@ -52,9 +49,4 @@
 .global-hamburger {
   padding: 22px 20px;
   float: right;
-}
-
-.global-content {
-  position: absolute;
-  top: 100px;
 }

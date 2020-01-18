@@ -1,27 +1,31 @@
 body {
-  background: linear-gradient(to right, red , yellow);
+  background: #3492AE;
+  color: white;
 }
 
 .home-blurb {
-  font-family: "Open Sans ExtraBold";
+  font-family: "Fira Sans Heavy";
   position: absolute;
   left: 20px;
-  bottom: 100px;
+  bottom: 120px;
   font-size: 48px;
   text-align: left;
   float: left;
 }
 
 .home-blurb-support {
+  font-family: "Fira Sans HeavyItalic";
   position: absolute;
   left: 20px;
   bottom: 40px;
   text-align: left;
   float: left;
+  font-weight: 800;
   font-size: 26px;
+  font-style: italic;
 }
 
 .home-blurb-highlight {
   padding: 6px 6px;
-  background-color: red;
+  background-color: #F28500;
 }
