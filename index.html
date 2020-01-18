@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,38 +6,39 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Open Revise</title>
     <meta name="description" content="Home of IGCSE revision. Past papers, mark schemes, and subject notes.">
+    <link rel="stylesheet" href="assets/styles/global.css">
     <link rel="stylesheet" href="assets/styles/home.css">
+
   </head>
   <body>
-    <header>
-      <div class="topnav">
-        <a class="active" href="index.html"> Home </a>
+    <img src="assets/backgrounds/background.png" class="home-bg">
+    <header class="topnav">
+      <a class="active" href="index.html"> Home </a>
         <div class="topnav-right">
-        <a href=""> Login </a>
-        <a href=""> <b> Join Now </b> </a>
-        <a href=""> Contact Us </a>
+          <a href=""> Contact Us </a>
         </div>
         <a class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
-        </a>
-      </div>
-      <main class="img">
-        </br>
-        <div>
-          <img class="logo" src="assets/logos/Logo.png">
-        </div>
-      </main>
+      </a>
     </header>
-  <script>
-    function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-    x.className += " responsive";
-    } else {
-    x.className = "topnav";
-    }
-    }
-  </script>
-  <p>Test</p>
+    <main>
+      </br>
+      <div>
+        <img class="logo" src="assets/logos/or-logo.png">
+      </div>
+    </main>
+    <script>
+      function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+      x.className += " responsive";
+      } else {
+      x.className = "topnav";
+      }
+      }
+    </script>
+  <h5>Welcome to OpenRevise. We provides free access to revision notes for many IGCSE subjects and 
+    help students to get their best results for IGCSE examination!
+  </h5>
   </body>
 </html>

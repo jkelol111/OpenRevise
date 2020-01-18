@@ -1,0 +1,26 @@
+/* :root {
+  --theme-color: ;
+} */
+
+@font-face {
+  font-family: "Open Sans Regular", serif;
+  src: url("assets/fonts/OpenSans-Regular.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans Regular";
+  color: white;
+  z-index: 3;
+}
+
+body {
+  background-color: black;
+}
+
+.logo {
+  width: auto;
+  height: auto;
+}
