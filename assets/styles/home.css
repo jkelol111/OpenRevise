@@ -1,23 +1,40 @@
-.home-blurb {
-  font-family: "Fira Sans Heavy";
+.home-blurb-container {
   position: absolute;
-  left: 20px;
-  bottom: 120px;
-  font-size: 48px;
-  text-align: left;
-  float: left;
+  top:  50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
 }
 
-.home-blurb-support {
-  font-family: "Fira Sans HeavyItalic";
-  position: absolute;
-  left: 20px;
-  bottom: 40px;
-  text-align: left;
-  float: left;
-  font-weight: 800;
-  font-size: 26px;
-  font-style: italic;
+.home-blurb {
+  font-family: "Fira Sans Heavy";
+  font-size: 64px;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  text-align: center;
+  background: inherit;
+}
+
+.home-blurb-action {
+  border: none;
+  max-width: 220px;
+  letter-spacing: 2px;
+  padding-top: 16px;
+  border-radius: 500px;
+  line-height: 1;
+  padding: 16px 48px 18px;
+  margin-top: 18px;
+  text-transform: uppercase;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+}
+
+.home-blurb-action:hover {
+  cursor: pointer;
 }
 
 .theme-light .home-blurb-highlight {
@@ -33,5 +50,5 @@
 }
 
 .home-blurb-highlight {
-  padding: 6px 6px;
+  padding: 8px 8px;
 }

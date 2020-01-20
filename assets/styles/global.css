@@ -63,12 +63,13 @@ if the HTML file loads this CSS file in the first place.
   position: fixed;
   top: 0px;
   width: 100%;
+  background: #000000;
 }
 
 /* The logo of the website in the menubar */
 
 .global-menubar-logo {
-  width: 180px;
+  width: 160px;
   height: auto;
   padding: 10px 10px;
   float: left;
@@ -89,7 +90,7 @@ if the HTML file loads this CSS file in the first place.
 /* Location indicator, e.g Home, Notes, etc. */
 
 .global-menubar-location {
-  font-size: 30px;
+  font-size: 26px;
   float: left;
   padding: 28px 10px;
 }
@@ -115,7 +116,7 @@ if the HTML file loads this CSS file in the first place.
   background: #7289DA;
 }
 
-.theme-dark .global-hamburger {
+.theme-pink .global-hamburger {
   background: #013A1A;
 }
 
