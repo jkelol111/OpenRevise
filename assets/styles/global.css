@@ -156,6 +156,11 @@ if the HTML file loads this CSS file in the first place.
   font-weight: 600;
 }
 
+.global-hamburger-items a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .global-hamburger-state-hidden, .global-hamburger-state-visible {
   transition: left 0.7s;
 }
