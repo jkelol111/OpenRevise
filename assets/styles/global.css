@@ -1,3 +1,10 @@
+/* 
+
+We load our fonts here... 
+Don't give a sh*t about it.
+
+*/
+
 @font-face {
   font-family: "Fira Sans Regular";
   src: url("../fonts/FiraSans-Regular.otf");
@@ -13,40 +20,150 @@
   src: url("../fonts/FiraSans-HeavyItalic.otf");
 }
 
+
+/* 
+
+The properties that we want every element to follow...
+if the HTML file loads this CSS file in the first place.
+
+*/
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  user-select: none;
   font-family: "Fira Sans Regular";
 }
+
+/* Themes for the whole webpage to follow, except the Notes viewer */
+
+.themeable {
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.theme-light {
+  background-color: #3492AE;
+  color: #FFFFFF;
+}
+
+.theme-dark {
+  background-color:#2C2F33;
+  color: #FFFFFF;
+}
+
+.theme-pink {
+  background-color: #FEC5E5;
+  color: #FFFFFF;
+}
+
+/* The menubar of the app, visible on almost every page. */
 
 .global-menubar {
   position: fixed;
   top: 0px;
   width: 100%;
-  background: transparent;
 }
 
-.global-logo {
-  width: 220px;
+/* The logo of the website in the menubar */
+
+.global-menubar-logo {
+  width: 180px;
   height: auto;
   padding: 10px 10px;
   float: left;
 }
 
+.global-menubar-logo:hover {
+  cursor: pointer;
+}
+
+/* If the device is a mobile, collapse the location indicatior */
+
 @media only screen and (max-width: 600px) {
-  .global-menubar .global-location {
+  .global-menubar-location {
     display: none;
   }
 }
 
-.global-location {
-  font-size: 38px;
+/* Location indicator, e.g Home, Notes, etc. */
+
+.global-menubar-location {
+  font-size: 30px;
   float: left;
-  padding: 20px 5px;
+  padding: 28px 10px;
+}
+
+/* Hamburger menu button */
+
+.global-menubar-hamburger {
+  padding: 20px 12px;
+  float: right;
+}
+
+.global-menubar-hamburger:hover {
+  cursor: pointer;
+}
+
+/* The acual hamburger menu itself */
+
+.theme-light .global-hamburger {
+  background: #CB6D51;
+}
+
+.theme-dark .global-hamburger {
+  background: #7289DA;
+}
+
+.theme-dark .global-hamburger {
+  background: #013A1A;
 }
 
 .global-hamburger {
-  padding: 22px 20px;
-  float: right;
+  z-index: 3000;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  opacity: 1;
+}
+
+.global-hamburger-close {
+  position: absolute;
+  width: 40px;
+  height: auto;
+  top: 10px;
+  left: 10px;
+  float: left;
+}
+
+.global-hamburger-close:hover {
+  cursor: pointer;
+}
+
+.global-hamburger-itemcontainer {
+  width: 100%;
+  height: 80vh;
+  overflow-y: auto;
+}
+
+.global-hamburger-items {
+  list-style: none;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.global-hamburger-state-hidden, .global-hamburger-state-visible {
+  transition: left 0.7s;
+}
+
+.global-hamburger-state-hidden {
+  left: 100%;
+}
+
+.global-hamburger-state-visible {
+  left: 0%;
 }

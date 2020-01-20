@@ -1,8 +1,3 @@
-body {
-  background: #3492AE;
-  color: white;
-}
-
 .home-blurb {
   font-family: "Fira Sans Heavy";
   position: absolute;
@@ -25,7 +20,18 @@ body {
   font-style: italic;
 }
 
+.theme-light .home-blurb-highlight {
+  background-color: #CB6D51;
+}
+
+.theme-dark .home-blurb-highlight {
+  background-color: #7289DA;
+}
+
+.theme-pink .home-blurb-highlight {
+  background-color: #013A1A;
+}
+
 .home-blurb-highlight {
   padding: 6px 6px;
-  background-color: #F28500;
 }
