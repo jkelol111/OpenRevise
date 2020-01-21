@@ -63,8 +63,7 @@ if the HTML file loads this CSS file in the first place.
   position: fixed;
   top: 0px;
   width: 100%;
-  background: #000000;
-  opacity: 0.83;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 /* The logo of the website in the menubar */
