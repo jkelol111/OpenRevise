@@ -25,6 +25,14 @@
   background: inherit;
 }
 
+.countdown {
+  margin-top: 10px;
+  text-align: center;
+  background: inherit;
+  font-weight: 200;
+  font-size: 18px;
+}
+
 .home-blurb-action {
   border: none;
   max-width: 220px;
