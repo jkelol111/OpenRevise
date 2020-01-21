@@ -64,14 +64,15 @@ if the HTML file loads this CSS file in the first place.
   top: 0px;
   width: 100%;
   background: #000000;
+  opacity: 0.83;
 }
 
 /* The logo of the website in the menubar */
 
 .global-menubar-logo {
-  width: 160px;
+  width: 175px;
   height: auto;
-  padding: 10px 10px;
+  padding: 6px 15px;
   float: left;
 }
 
@@ -98,7 +99,7 @@ if the HTML file loads this CSS file in the first place.
 /* Hamburger menu button */
 
 .global-menubar-hamburger {
-  padding: 20px 12px;
+  padding: 19px 15px;
   float: right;
 }
 
@@ -134,10 +135,10 @@ if the HTML file loads this CSS file in the first place.
 
 .global-hamburger-close {
   position: absolute;
-  width: 40px;
+  width: 30px;
   height: auto;
-  top: 10px;
-  left: 10px;
+  top: 12px;
+  left: 12px;
   float: left;
 }
 

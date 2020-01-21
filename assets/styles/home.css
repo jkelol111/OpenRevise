@@ -11,9 +11,10 @@
 
 .home-blurb {
   font-family: "Fira Sans Heavy";
-  font-size: 64px;
+  font-size: 58px;
   font-weight: 900;
   letter-spacing: -0.04em;
+  line-height: 85px;
   text-align: center;
   background: inherit;
 }
@@ -26,7 +27,7 @@
   border-radius: 500px;
   line-height: 1;
   padding: 16px 48px 18px;
-  margin-top: 18px;
+  margin-top: 20px;
   text-transform: uppercase;
   background-color: #000000;
   color: #ffffff;
@@ -35,20 +36,4 @@
 
 .home-blurb-action:hover {
   cursor: pointer;
-}
-
-.theme-light .home-blurb-highlight {
-  background-color: #CB6D51;
-}
-
-.theme-dark .home-blurb-highlight {
-  background-color: #7289DA;
-}
-
-.theme-pink .home-blurb-highlight {
-  background-color: #013A1A;
-}
-
-.home-blurb-highlight {
-  padding: 8px 8px;
 }
