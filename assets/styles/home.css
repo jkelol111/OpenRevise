@@ -19,6 +19,12 @@
   background: inherit;
 }
 
+.home-blurb-support {
+  margin-top: 10px;
+  text-align: center;
+  background: inherit;
+}
+
 .home-blurb-action {
   border: none;
   max-width: 220px;
